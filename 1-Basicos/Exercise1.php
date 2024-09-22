@@ -13,7 +13,7 @@
    // Mostrar la comparación de las dos variables iniciales
    echo "COMPARACIÓN:<br> $num1 es ". ($num1>$num2?"mayor":($num1<$num2?"menor":"igual"))." que $num2<br><br>";
 
-   //
+   // Calcular el área de un triangulo con los valores de las variables iniciales
    echo "ÁREA DEL TRIANGULO:<br>";
 
    if ($num1>1 && $num2>1) {
