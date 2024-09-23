@@ -11,13 +11,19 @@
         "Ciudad" => "Barcelona",
     ];
 
+    $i = 1;
+    foreach ($datos_persona as $key => $value) {
+        echo "Dato {$i}º : $value<br>";
+        $i++;
+    }
+    
+    echo "<br>";
+    
+    echo "<h3>Ejercicio 2</h3>";
     foreach ($datos_persona as $key => $value) {
         echo "$key : $value<br>";
     }
-
-    echo "<br>";
-
-    echo "<h3>Ejercicio 2</h3>";
+    
 
     echo "<br>";
 
