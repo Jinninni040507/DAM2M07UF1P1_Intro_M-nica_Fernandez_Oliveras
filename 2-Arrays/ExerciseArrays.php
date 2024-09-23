@@ -63,6 +63,33 @@
     echo "<br>";
 
     echo "<h3>Ejercicio 6</h3>";
+    $notas_alumnos = [
+        "Miguel" => 5,
+        "Luís" => 7,
+        "Marta" => 10,
+        "Isabel" => 8,
+        "Aitor" => 4,
+        "Pepe" => 1,
+    ];
+
+    echo "Nota de los estudiantes: ";
+
+    // Ordena los valores de un array asociativo sin romper la relacion entre clave y valor
+    asort($notas_estudiantes);
+
+    // Mostrar los datos
+    foreach ($notas_alumnos as $key => $value) {
+        echo $key.": ".$value." ";
+    }
+
+    echo "<br>";
+
+    echo "<h3>Ejercicio 7</h3>";
+    
+
+    echo "<br>";
+
+    echo "<h3>Ejercicio 8</h3>";
 
     echo "<br>";
 ?>
