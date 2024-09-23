@@ -35,16 +35,30 @@
         echo "$key : $value<br>";
     }
     echo "<br>";
-
+    
     echo "<h3>Ejercicio 4</h3>";
     // Eliminar el campo(clave y value) de ciudad del array asociativo
     unset($datos_persona["Ciudad"]);
-
+    
     var_dump($datos_persona);
-
+    
     echo "<br>";
-
+    
     echo "<h3>Ejercicio 5</h3>";
+    $letters = "a,b,c,d,e,f";
+    
+    // separar y convertir a valores de un array las letras de la cadena de texto
+    $array_letters = explode(",",$letters);
+    
+    // ordenar las letras en orden descendente
+    rsort($array_letters);
+    
+    // mostrar el array
+    $i = 1;
+    foreach ($array_letters as $key => $value) {
+        echo "Letter {$i}º : $value<br>";
+        $i++;
+    }
 
     echo "<br>";
 
