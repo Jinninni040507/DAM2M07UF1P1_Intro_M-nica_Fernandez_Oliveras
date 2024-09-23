@@ -112,7 +112,17 @@
 
     echo "<br>";
 
+    $nota_mas_alta = 0;
+    $nombre_mejor_alumno;
+
     echo "<h3>Ejercicio 8</h3>";
+    foreach ($notas_alumnos as $key => $value) {
+        if ($value>$nota_mas_alta) {
+            $nota_mas_alta = $value;
+            $nombre_mejor_alumno = $key;
+        }
+    }
+    echo "La nota más alta es $nota_mas_alta y el mejor alumno/a es $nombre_mejor_alumno";
 
     echo "<br>";
 ?>
