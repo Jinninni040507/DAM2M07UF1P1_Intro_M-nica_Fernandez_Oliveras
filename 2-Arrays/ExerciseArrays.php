@@ -28,6 +28,7 @@
     echo "<br>";
     
     echo "<h3>Ejercicio 3</h3>";
+    // Modificar el campo edad del array de 23 a 24
     $datos_persona["Edad"] = 24;
     
     foreach ($datos_persona as $key => $value) {
@@ -36,6 +37,10 @@
     echo "<br>";
 
     echo "<h3>Ejercicio 4</h3>";
+    // Eliminar el campo(clave y value) de ciudad del array asociativo
+    unset($datos_persona["Ciudad"]);
+
+    var_dump($datos_persona);
 
     echo "<br>";
 
