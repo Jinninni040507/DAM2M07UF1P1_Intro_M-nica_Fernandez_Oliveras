@@ -75,7 +75,7 @@
     echo "Nota de los estudiantes: ";
 
     // Ordena los valores de un array asociativo sin romper la relacion entre clave y valor
-    asort($notas_estudiantes);
+    asort($notas_alumnos);
 
     // Mostrar los datos
     foreach ($notas_alumnos as $key => $value) {
@@ -85,7 +85,30 @@
     echo "<br>";
 
     echo "<h3>Ejercicio 7</h3>";
-    
+
+    $suma_notas = 0;
+    $contador_notas = 0;
+    $a_not_may_med;
+
+    // Hacer la suma total de las notas y calcular cuantas notas hay
+    foreach ($notas_alumnos as $key => $value) {
+        $suma_notas += $value;
+        $contador_notas++;
+    }
+
+    // calcular media
+    $media_notas = $suma_notas/$contador_notas;
+
+    // formatear resultado media
+    $media_formateada = number_format($media_notas, 2);
+
+    // Mostrar alumnos con nota mayor a la media
+    echo "Media de las notas: $media_formateada<br><br>Alumnos con nota por encima de la media:<br>";
+    foreach ($notas_alumnos as $key => $value) {
+        if ($value > $media_notas) {
+            echo "$key<br>";
+        }
+    }
 
     echo "<br>";
 
