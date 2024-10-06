@@ -89,7 +89,7 @@
                     'Milk' => 0,
                 ];
 
-                $_SESSION['worker'] = $_GET['worker'];
+                $_SESSION['worker'] = "";
 
                 break;
         }
